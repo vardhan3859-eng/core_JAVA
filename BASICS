@@ -34,3 +34,29 @@ nextLine()           Hello Java      String
 next()               vardhan         String
 next().charAt()      A               Char
 nextBoolean()        true            Boolean
+/*sample program on data types
+import java.util.*;
+	class Demo{
+		public static void main(String []args)
+		{
+				Scanner sc= new Scanner(System.in);
+				System.out.println("Enter the Employee details:");
+				String employee_name;
+				int age;
+				long salary;
+				float average;
+				double total;
+				System.out.println("Enter the age:");
+				age=sc.nextInt();
+				System.out.println("Enter the salary:");
+				salary=sc.nextLong();
+				System.out.println("Enter the average:");
+				average=sc.nextFloat();
+				System.out.println("Enter the total:");
+				total=sc.nextDouble();
+				System.out.println("Age is:"+age);
+				System.out.println("Salary is:"+salary);
+				System.out.println("Average is:"+average);
+				System.out.println("Total is:" +total);
+	}
+}
