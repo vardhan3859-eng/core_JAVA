@@ -24,3 +24,13 @@ Standard Naming Conventions (Best Practices)
 
 • Use camelCase. Start with a lowercase letter and capitalize subsequent words (e.g., studentName, totalAmount).
 • Constants in UPPER_CASE. Use all caps with underscores for final constant variables (e.g., final int MAX_SPEED = 120;).
+method explanation
+Scanner method      example          return type
+nextInt()            25              int
+nextLong()           987654321L      long
+nextFloat()          85.5f           float
+nextDouble()         25000.75        double
+nextLine()           Hello Java      String
+next()               vardhan         String
+next().charAt()      A               Char
+nextBoolean()        true            Boolean
