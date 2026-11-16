@@ -60,3 +60,28 @@ import java.util.*;
 				System.out.println("Total is:" +total);
 	}
 }
+OPERATERS ON JAVA
+/*arthmetic operaters
++ , - , * , / ,%
+/*sample program arthmetic operaters
+import java.util.*;
+	class arth{
+		public static void main(String []args){
+		Scanner sc=new Scanner(System.in);
+		int cash,tiffin,dinner,total_expen;
+		float avgOfWeek;
+		System.out.println("enter cash");
+		cash=sc.nextInt();
+		System.out.println("enter tiffin amount");
+		tiffin=sc.nextInt();
+		System.out.println("enter dinner amount");
+		dinner=sc.nextInt();
+		total_expen=dinner+tiffin;
+		System.out.println("total expensive is:"+total_expen);
+		avgOfWeek=total_expen/7;
+		System.out.println("average of week expensive is:"+avgOfWeek);
+		}
+	}
+		
+		
+		
