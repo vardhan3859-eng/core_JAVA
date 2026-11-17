@@ -1,1 +1,17 @@
 /*control statments
+three types
+1.conditional statments
+  ->if
+  ->if else
+  ->elseif ladder 
+  ->nested if
+  ->switch
+2.looping statments
+  ->for
+  ->while
+  ->do while
+3.jumping statments
+  ->continue
+  ->break
+  ->return
+
