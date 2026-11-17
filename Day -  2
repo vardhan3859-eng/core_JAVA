@@ -73,3 +73,91 @@ public static void main(String args[])
 	}
 }
 }
+/*program on switch
+import java.util.Scanner;
+public class switch2{
+    public static void main(String []args)
+    {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter day:");
+        int day=sc.nextInt();
+        switch(day){
+        case 1:
+            System.out.println("Today is monday");
+            break;
+        case 2:
+            System.out.println("Today is Tuesday");
+            break;
+        case 3:
+            System.out.println("Today is wednesday");
+            break;
+
+        default:
+            System.out.println("Enter the input in integer format");
+            break;
+        }
+
+    }
+}
+/*switch case on branch
+import java.util.Scanner;
+public class branch{
+    public static void main(String []args)
+    {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter branch code:");
+        int branch=sc.nextInt();
+        switch(branch){
+        case 1:
+            System.out.println("cse");
+            break;
+        case 2:
+            System.out.println("ece");
+            break;
+        case 3:
+            System.out.println("csd");
+            break;
+	case 4:
+            System.out.println("cse(ai)");
+            break;
+	case 5:
+            System.out.println("cse(cs)");
+            break;
+	 case 6:
+            System.out.println("cst");
+            break;
+        case 7:
+            System.out.println("eee");
+            break;
+        case 8:
+            System.out.println("civil");
+            break;
+	case 9:
+            System.out.println("cse(ccbd)");
+            break;
+	case 10:
+            System.out.println("cse(da)");
+            break;
+	 case 11:
+            System.out.println("mba");
+            break;
+        case 12:
+            System.out.println("mca");
+            break;
+        case 13:
+            System.out.println("mfa");
+            break;
+	case 14:
+            System.out.println("ttd)");
+            break;
+	case 15:
+            System.out.println("bca");
+            break;
+        default:
+            System.out.println("Enter the input in integer format");
+            break;
+        }
+
+    }
+}
+    
