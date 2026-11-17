@@ -52,4 +52,22 @@ public class ifelse{
 		}
 	}
 }
-
+/*nested if:syntax
+if(condition){
+	if(condition){
+		//block of code
+	}
+}
+/*program on  nested if
+import java.util.*;
+public static void main(String args[])
+{
+	Scanner obj=new Scanner(System.in);
+	System.out.println("enetr number:");
+	int value1=obj.nextInt();
+	if(value1>=20){
+		if(vlues1>20)
+		System.out.println("condtion2");
+	}
+}
+	
