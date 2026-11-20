@@ -1,0 +1,228 @@
+Reverse of an Array in Java
+Reversing an array means changing the order of elements from last to first.
+1. Example
+Original array:
+int arr[] = {10, 20, 30, 40, 50};
+
+
+Reversed array:
+{50, 40, 30, 20, 10}
+
+program:
+
+public class Main {
+    public static void main(String[] args) {
+
+        int a[] = {10, 20, 30, 40, 50};
+
+        int left=0;
+      int right=a.length-1;
+      while(left<right){
+        int temp=a[left];
+        a[left]=a[right];
+        a[right]=temp;
+        left++;
+        right--;
+      }
+
+        for( int i=0;i < a.length - 1; i++) {
+            System.out.print(a[i]+" ");
+        }
+    }
+}
+2D Array in Java
+A 2D array (Two-Dimensional Array) is an array that stores data in rows and columns, like a table or matrix.
+3D Array
+
+public class Main {
+    public static void main(String[] args) {
+        int arr[][][] = new int[3][3][3];
+        int sum = 0;
+        arr[0][0][0] = 10;
+        arr[0][0][1] = 20;
+        arr[0][0][2] = 30;
+        arr[0][1][0] = 40;
+        arr[0][1][1] = 50;
+        arr[0][1][2] = 60;
+        arr[0][2][0] = 70;
+        arr[0][2][1] = 80;
+        arr[0][2][2] = 90;
+        arr[1][0][0] = 100;
+        arr[1][0][1] = 110;
+        arr[1][0][2] = 120;
+        arr[1][1][0] = 130;
+        arr[1][1][1] = 140;
+        arr[1][1][2] = 150;
+        arr[1][2][0] = 160;
+        arr[1][2][1] = 170;
+        arr[1][2][2] = 180;
+        arr[2][0][0] = 190;
+        arr[2][0][1] = 200;
+        arr[2][0][2] = 210;
+        arr[2][1][0] = 220;
+        arr[2][1][1] = 230;
+        arr[2][1][2] = 240;
+        arr[2][2][0] = 250;
+        arr[2][2][1] = 260;
+        arr[2][2][2] = 270;
+        System.out.println("3D Array:");
+
+        for(int i = 0; i < 3; i++) {
+            for(int j = 0; j < 3; j++) {
+                for(int k = 0; k < 3; k++) {
+
+                    System.out.print(arr[i][j][k] + " ");
+                    sum = sum + arr[i][j][k];
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+
+        System.out.println("Total Sum = " + sum);
+    }
+}
+
+STRINGS IN JAVA:
+ 
+String str = "Java Programming";
+
+1. length()
+
+Meaning: Returns the total number of characters in a string, including spaces.
+String str = "Java Programming";
+System.out.println(str.length());
+Output:
+16
+Explanation: Java (4) + Space (1) + Programming (11) = 16.
+
+2. charAt()
+
+Meaning: Returns the character at a particular index.
+String str = "Java Programming";
+System.out.println(str.charAt(0));
+Output:
+J
+Explanation: Index starts from 0.
+Character	J	a	v	a
+Index	0	1	2	3
+
+3. toUpperCase()
+
+Meaning: Converts all lowercase letters into uppercase.
+String str = "Java Programming";
+System.out.println(str.toUpperCase());
+Output:
+JAVA PROGRAMMING
+
+4. toLowerCase()
+
+Meaning: Converts all uppercase letters into lowercase.
+String str = "JAVA PROGRAMMING";
+System.out.println(str.toLowerCase());
+Output:
+java programming
+
+5. trim()
+
+Meaning: Removes spaces at the beginning and end of a string.
+String str = "  Java Programming  ";
+System.out.println(str.trim());
+Output:
+Java Programming
+
+6. equals()
+
+Meaning: Compares two strings. Returns true if their contents are equal.
+String str1 = "Java";
+String str2 = "Java";
+System.out.println(str1.equals(str2));
+
+Output:
+true
+
+7. equalsIgnoreCase()
+
+Meaning: Compares two strings without considering uppercase or lowercase differences.
+String str1 = "JAVA";
+String str2 = "java";
+System.out.println(str1.equalsIgnoreCase(str2));
+Output:
+true
+
+8. contains()
+
+Meaning: Checks whether a particular word or character is present in a string.
+String str = "Java Programming";
+System.out.println(str.contains("Java"));
+Output:
+true
+
+9. startsWith()
+Meaning: Checks whether a string starts with the given text.
+String str = "Java Programming";
+System.out.println(str.startsWith("Java"));
+Output:
+true
+
+10. endsWith()
+
+Meaning: Checks whether a string ends with the given text.
+String str = "Java Programming";
+System.out.println(str.endsWith("Programming"));
+Output:
+true
+
+11. indexOf()
+
+Meaning: Returns the index of the first occurrence of a character or word.
+String str = "Java Programming";
+System.out.println(str.indexOf('a'));
+Output:
+1
+Explanation: First a is at index 1.
+
+12. lastIndexOf()
+
+Meaning: Returns the index of the last occurrence of a character or word.
+String str = "Java Programming";
+System.out.println(str.lastIndexOf('a'));
+Output:
+3
+Explanation: Last a is at index 3.
+
+13. substring()
+
+Meaning: Extracts a portion of a string.
+String str = "Java Programming";
+System.out.println(str.substring(0, 4));
+Output:
+Java
+Explanation:
+- Starting index = 0
+- Ending index = 4 (excluded)
+
+14. replace()
+
+Meaning: Replaces a character or word with another character or word.
+String str = "Java Programming";
+System.out.println(str.replace('a', 'o'));
+Output:
+Jovo Programming
+15. concat()
+
+Meaning: Joins two strings.
+String str = "Java";
+String str2 = " Programming";
+System.out.println(str.concat(str2));
+Output:
+
+Java Programming
+
+16. isEmpty()
+
+Meaning: Checks whether a string has zero characters.
+String str = "";
+System.out.println(str.isEmpty());
+Output:
+true
