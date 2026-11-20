@@ -1,0 +1,143 @@
+pillers of oops
+  ->encapsulation       data binding
+  ->polymarphism        many forms
+  ->abstarction         hiding implementation
+  ->inheritance         code resusability
+  /*single inheritance*/
+              --------------
+              | class  A   |
+              --------------
+                    |  
+              --------------
+              | class B    |
+              --------------
+  one parent class  ->  one child class
+  //syntax of single inheritance
+  class A{
+            //block of code
+}
+  class B extendes class A{
+            //block of code
+  }
+//sample program on single inheritance
+class Animal {
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog is barking");
+    }
+}
+
+class Main {
+    public static void main(String args[]) {
+        Dog d = new Dog();
+
+        d.eat();
+        d.bark();
+    }
+}
+2. Multilevel Inheritance
+
+class A {
+}
+
+class B extends A {
+} 
+
+class C extends B {
+}
+//sample proram on multilevel inheritance
+class Animal {
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog is barking");
+    }
+}  
+class Cat extends Dog{  
+      void meow(){
+          System.out.println("cat says meow");
+      }
+}
+
+class Main {
+    public static void main(String args[]) {
+        Cat c = new Cat();
+        c.meow();
+        c.eat();
+        c.bark();
+    }
+}
+
+3. Hierarchical Inheritance
+
+class A {
+}
+
+class B extends A {
+}
+
+class C extends A {
+}
+//sample program on
+
+
+4. Multiple Inheritance (Using Interfaces)
+
+interface A {
+}
+
+interface B {
+}
+
+class C implements A, B {
+}
+
+
+5. Hybrid Inheritance (Using Interfaces)
+
+class A {
+}
+
+interface B {
+}
+
+class C extends A implements B {
+}
+
+class D extends C {
+} 
+//sample progarm
+interface pet{
+    void play();
+}
+class animal{
+    void eat(){
+        System.out.println("animal is eating");
+    }
+}
+class dog extends animal implements pet{
+    public void play(){
+        System.out.println("animal is playing games");
+    }
+    void mam(){
+        System.out.println("mam is playing with animals");
+    }
+
+}
+class cat extends animal implements pet{
+    public void play(){
+        System.out.println("hello world");
+    }
+    void men(){
+        System.out.println("men is playing game");
+    }
+}
